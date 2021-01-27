@@ -1,0 +1,193 @@
+page{
+  background-color: #f0f0f0;
+}
+image{
+  width: 63rpx;
+  height: 63rpx;
+  margin-right: 20rpx;
+}
+.user_avatarurl{
+  background-color: #fff;
+  padding: 10px;
+}
+.userinfo{
+  display: flex;
+  flex-wrap: wrap;
+  height: 120px;
+  align-items: center;
+  background-color: #d4edd8;
+  border-radius: 18px;
+}
+.container{
+  /* display: flex; */
+  padding-top: 30rpx;
+  background-color: #f0f0f0;
+}
+.user_options{
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  padding-left: 31.25rpx;
+  align-items: center;
+  border-bottom: solid #f0f0f0;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.logout{
+  height: 120rpx;
+  background-color: #f0f0f0;
+  display: flex;
+  margin-top: 20rpx;
+}
+.logout_button{
+  height: 80%;
+  width: 80%;
+  background-color: #fff;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+  font-size: 14px;
+}
+
+.infoBox {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.bluebox {
+  display: flex;
+  flex-wrap: wrap;
+  height: 120px;
+  background-color: #d4edd8;
+  border-radius: 15px;
+}
+
+.bluebox-pic {
+  padding-left: 20px;
+  padding-top: 25px;
+  width: 95px;
+  height: 95px;
+  display: flex;
+}
+
+/*用户头像样式 */
+
+.head-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  position: relative;
+}
+
+.head-view .userinfo-avatar {
+  position: absolute;
+  display: flex;
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  border: 20px solid #d4edd8;
+}
+
+.bluebox-info {
+  padding-top: 25px;
+  padding-left: 20px;
+  width: 170px;
+  height: 80px;
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 23px;
+}
+.bluebox-info text{
+  color: rgb(160, 159, 159);
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+/*信息字体与框*/
+
+.bluebox-info-content {
+  margin-left: 5px;
+}
+
+/*详细信息*/
+
+.bluebox-cficon {
+  position: absolute;
+  right: 20px;
+  padding-top: 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+/*账号管理的图标，，这个不太会啊，够不够长啊*/
+
+.countBox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*为了循环和边框*/
+
+.sumforbox {
+  flex-wrap: wrap;
+  width: 20%;
+  text-align: center;
+  height: 70px;
+}
+
+/*循环用的限宽盒，放统计和类别*/
+
+.forbox-sum {
+  font-size: 17px;
+  color: #4b5cd7;
+  padding-top: 15px;
+}
+
+/*统计框 单位，字体*/
+
+.forbox-name {
+  text-align: center;
+  font-size: 12px;
+}
+
+/*循环名字框 字体*/
+
+/*功能列表样式*/
+
+.featureBox {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*为了循环和边框*/
+
+.dataforbox {
+  /*background-color: rgb(63, 9, 209);*/
+  width: 25%;
+  height: 70px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+/*循环名字框 字体*/
+
+.insert {
+  width: 20px;
+  height: 20px;
+}
+
+.version{
+  margin-top: 10px;
+  text-align:center;
+  font-size: 10px;
+  color: #b2b2b2;
+}

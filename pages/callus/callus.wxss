@@ -1,0 +1,5 @@
+.callus{
+  font-size: 16px;
+  padding: 20rpx;
+  margin: 20rpx;
+}

@@ -1,0 +1,28 @@
+<view calss="page">
+  <view class="weui-navbar">
+<scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+        <block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+            <view class="nav-item {{currentTab == idx ?'active':''}}"  data-current="{{idx}}" bindtap="switchNav">{{navItem.cat_name}}</view>
+        </block>        
+</scroll-view>
+</view>
+<view class="weui-tab__panel">
+<view class="hot_talk">
+    热门发布：
+</view> 
+  <block wx:for="{{talks}}" wx:key="commentId">
+    <view class="weui-panel" bindtap="detail" data-id="{{item.commentId}}">
+          <view class="weui-panel__bd">
+              <view class="box">
+                <view class="hot_talk_title">
+                  <!-- {{item.cat_name}} {{item.title}} -->
+                  {{item.title}}
+                </view>
+              </view>
+          </view>
+    </view>
+  </block>
+</view>
+</view>
+
+<image bindtap="chooseimage" class="moment_img new_post" bindtap="newPost" src='../../static/images/ic_fabu.png'></image>

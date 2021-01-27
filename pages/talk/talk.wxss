@@ -1,0 +1,63 @@
+@import "../common/lib/weui.wxss";
+.nav {
+  height: 100rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 100rpx;
+  background: #f7f7f7;
+  font-size: 16px;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+.nav-item {
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  color: #a0a0a0;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: bold;
+}
+.nav-item.active{
+  color: #09bb07;
+}
+
+.hot_talk {
+  position: relative;
+  color: #a0a0a0;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 31.25rpx;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eeeeee;
+  height: 100rpx;
+  width: 100%;
+}
+.hot_talk_title {
+  position: relative;
+  color: #a0a0a0;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 31.25rpx;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eeeeee;
+  height: 100rpx;
+  width: 100%;
+}
+
+.new_post{
+  float: right;
+  position: fixed;
+  bottom: 60rpx;
+  right: 60rpx;
+  /*border-radius: 500px;*/
+  width: 100rpx;
+  height: 100rpx;
+}

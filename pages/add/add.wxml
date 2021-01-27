@@ -1,0 +1,52 @@
+<!--pages/add/add.wxml-->
+<view class='addcontent'>
+      <view class='content'>
+        <view>禁止重复发布，或是发布与分类无关、营销推广等内容</view>
+      </view>
+      <view class='choose-area'>
+        <view class="title">
+          <text>所在地区:</text>
+        </view>
+        <view class="add-form">
+          <view class="form-item">
+            <picker mode="multiSelector" bindchange="bindRegionChange" bindcolumnchange="bindAreaChange" range="{{regionList}}" range-key="name" value="{{regionIndex}}">
+              <view class="picker">
+                  {{regionList[0][regionIndex[0]].name}}<text decode>\t&nbsp;</text> {{cityObject[regionIndex[1]].cityName}}
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+      <view class="content2">
+        <text>检举内容:</text>
+      </view>
+
+    <view class="theme">
+      <text class="theme_title">主题：</text>
+       <textarea class="theme-input" bindinput="setTheme" placeholder="" name="theme" value="{{detail.theme}}" maxlength="-1" ></textarea>
+     </view>
+
+      <view class="text">
+        <text class="text_title">内容:</text>
+        <textarea class="text-input" bindinput="setText" name="content" maxlength="-1" value="{{detail.content}}"></textarea>
+     </view>
+     <!--TOOD：上传图片功能-->
+     <view class="content3">
+      <text>上传图片，限6张以内。</text>
+     </view>
+     <view class="addimg">
+       <image src="../../static/images/ic_add_img.png" wx:if="{{images.length<6}}" bindtap="uploadImage"></image>
+       <view class="img" wx:for="{{images}}" wx:for-item="item" wx:key="*this">
+                <!-- 图片缩略图  -->
+                <image src="{{item}}" mode="aspectFill"></image>
+                <!--TODO：移除图片-->
+                <!--<view class="delete-btn" data-index="{{index}}" catchtap="deleteImg">删除</view>-->
+            </view>
+     </view>
+     <view class="publish">
+       <button class="Button_publish" bindtap="bindPublish">发布</button>
+       <text decode="{{true}}">&emsp;&emsp;</text>
+       <button class="Button_Anonpublish" bindtap="bindAnopublish">匿名发布</button>
+     </view>
+</view>
+

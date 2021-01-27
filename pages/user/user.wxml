@@ -1,0 +1,46 @@
+
+<view class='infoBox'>
+  <view class='bluebox'>
+    <view class='bluebox-pic'>
+      <view class='head-view'>
+        <open-data type="userAvatarUrl" class="userinfo-avatar" mode="aspectFit" background-size="cover" ></open-data>
+      <!--<view class='userinfo-avatar'></view>-->
+    </view>
+    </view>
+
+    <view class='bluebox-info'> 
+      <view>
+        <text></text>
+        <text class='bluebox-info-content'>{{userInfo.nickName}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="container">
+  <view class="user_options">
+    <image src="../../static/my_icon/identify.png"></image>
+    实名认证
+  </view>
+  <view class="user_options" bindtap="collection">
+    <image src="../../static/my_icon/collections.png"></image>
+    我的收藏
+  </view>
+  <view class="user_options">
+    <image src="../../static/my_icon/interaction.png"></image>
+    我的互动
+  </view>
+  <view class="user_options">
+    <image src="../../static/my_icon/master.png"></image>
+    专家系统
+  </view>
+  <view class="user_options" bindtap="callus">
+    <image src="../../static/my_icon/callus.png"></image>
+    联系我们
+  </view>
+  <view class="logout">
+    <view class="logout_button" bindtap="exitLogin">
+      退出登录
+    </view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+.hot_talk {
+  position: relative;
+  color: #a0a0a0;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 31.25rpx;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eeeeee;
+  height: 100rpx;
+  width: 100%;
+}
+.hot_talk_title {
+  position: relative;
+  color: #a0a0a0;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 31.25rpx;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eeeeee;
+  height: 100rpx;
+  width: 100%;
+}

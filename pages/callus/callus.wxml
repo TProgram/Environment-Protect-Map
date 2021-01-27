@@ -1,0 +1,4 @@
+<!--pages/callus/callus.wxml-->
+<view class="callus">论坛管理员微信：XXXX.</view>
+<view class="callus">联系电话：123456789</view>
+<view class="callus">工作时间：周一到周五 9:00-21:00</view>

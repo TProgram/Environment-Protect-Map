@@ -1,0 +1,31 @@
+<view class="choose-address">
+    <view>
+    <view class="form-item">
+      <picker mode="multiSelector" bindchange="bindRegionChange" bindcolumnchange="bindAreaChange" range="{{regionList}}" range-key="name" value="{{regionIndex}}">
+	    <view class="picker">
+        {{regionList[0][regionIndex[0]].name}}<text decode>\t&nbsp;</text>{{cityObject[regionIndex[1]].cityName}}
+		  </view>
+	    </picker>
+    </view>
+  </view>
+  <view class="container">
+    <view class = "map_name">环保地图:</view>
+    <ec-canvas id="mychart-dom-map" canvas-id="mychart-dom-map" ec="{{ ec }}" bindmyevent="jump"></ec-canvas>
+  </view>
+  <view class="hot_talk">
+    最新发布：
+  </view>
+
+  <block wx:for="{{latestCommentList}}" wx:key="commentId">
+    <view class="weui-panel" bindtap="detail" data-id="{{item.commentId}}">
+      <view class="weui-panel__bd">
+              <view class="box">
+                <view class="hot_talk_title">
+                  <!-- {{item.cat_name}} {{item.title}} -->
+                  {{item.title}}
+                </view>
+              </view>
+          </view>
+    </view>
+  </block>
+</view>

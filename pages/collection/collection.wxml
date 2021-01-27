@@ -1,0 +1,15 @@
+<view class="hot_talk">
+    我的收藏：
+</view> 
+  <block wx:for="{{collections}}" wx:key="commentId">
+    <view class="weui-panel" bindtap="detail" data-id="{{item.commentId}}">
+          <view class="weui-panel__bd">
+              <view class="box">
+                <view class="hot_talk_title">
+                  <!-- {{item.cat_name}} {{item.title}} -->
+                  {{item.title}}
+                </view>
+              </view>
+          </view>
+    </view>
+  </block>
