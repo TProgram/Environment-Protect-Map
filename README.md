@@ -8,7 +8,7 @@ EPM是一个论坛小程序，里面集成了`echarts`中国地图，可以通�
 上面二级选择框可以选择省市，之后可以跳转到相应的省市讨论区论坛界面。或者通过点击地图上某一个省份来进行跳转。
 下面的 **最新发布** 是选出了所有省市的最新发布或者跟帖的若干个帖子。
 
-![首页效果图](https://git.code.tencent.com/TProgram/EPM/datamask/datamask_front/raw/d539c7859afc7da04c6d94f169cedcbc6c743a01/image/index.jpg)
+![首页效果图](image/index.jpg)
 
 讨论区：  
 讨论区是各个省的论坛。最上面可以选择该省下的其他市区进行跳转。
@@ -16,12 +16,12 @@ EPM是一个论坛小程序，里面集成了`echarts`中国地图，可以通�
 点击右下角的铅笔符号可以发帖。发帖可以上传图片。也可以选择匿名发帖。
 帖子标题的右边有个五角星符号，点击可以进行收藏。收藏的帖子在“**我的**”页面的“**我的收藏**”中查看。
 
-![发帖效果图](https://git.code.tencent.com/TProgram/EPM/datamask/datamask_front/raw/d539c7859afc7da04c6d94f169cedcbc6c743a01/image/post.jpg)
-![讨论区效果图](https://git.code.tencent.com/TProgram/EPM/datamask/datamask_front/raw/d539c7859afc7da04c6d94f169cedcbc6c743a01/image/talk.jpg)
+![发帖效果图](image/post.jpg)
+![讨论区效果图](image/talk.jpg)
 
 我的：  
 我的页面采用微信登录的方式。仅实现了“**我的收藏**”页面的收藏功能。以及“**联系我们**”有个简单的页面
-![首页效果图](https://git.code.tencent.com/TProgram/EPM/datamask/datamask_front/raw/1bc84f98199c66c7da0616a21f170b8c9992fb1f/image/my.jpg)
+![首页效果图](image/my.jpg)
 
 ## 后端技术 ##
 MySQL  
