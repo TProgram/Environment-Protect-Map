@@ -1,6 +1,9 @@
 ## 前言 ##
 EPM是一个论坛小程序，里面集成了`echarts`中国地图，可以通过点击地图上的省份以及通过二级选择框进行省和市级跳转，进入某一个省市的论坛版块。该项目实现了基本的论坛功能，包括发帖，匿名发帖，上传图片，跟帖，收藏等功能。
 
+
+**本项目是EPM的前端部分，后端代码见**[Environment-Protect-Map-backend](https://github.com/TProgram/Environment-Protect-Map-backend "Environment-Protect-Map-backend")
+
 ## 小程序前端介绍 ##
 首页：   
 首页使用echarts来实现地图展示。需要下载相应地图文件 见
